@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 import streamlit as st
 
-weather_model=pickle.load(open("weather_model.sav", "rb"))
+weather_model=pickle.load(open("model/weather_model.sav", "rb"))
 
 
 st.title(' Weather Type Prediction App')
