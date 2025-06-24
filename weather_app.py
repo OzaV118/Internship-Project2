@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 import streamlit as st
 
-weather_model=pickle.load(open("weather_model.sav", 'rb'))
+weather_model=pickle.load(open("weather_model.sav", "rb"))
 
 
 st.title(' Weather Type Prediction App')
@@ -36,7 +36,7 @@ with col6:
 visibility = st.text_input(" Visibility (km)")
 
 
-st.markdown("  Environmental Context")
+
 col7, col8, col9 = st.columns(3)
 with col7:
     cloud_cover_input = st.selectbox(' Cloud Cover', list(cloud_cover_map.keys()))
@@ -51,7 +51,6 @@ season_value = season_map[season_input]
 location_value = location_map[location_input]
 
 
-st.markdown(" Make a Prediction")
 if st.button('Predict Weather Type'):
         # Convert numeric inputs
     input_data = [
