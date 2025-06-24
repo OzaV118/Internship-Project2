@@ -4,7 +4,7 @@ import streamlit as st
 
 weather_model=pickle.load(open("weather_model.sav", 'rb'))
 
-st.set_page_config(page_title="Weather Prediction", layout="centered")
+
 st.title(' Weather Type Prediction App')
 
 # dropdwonlist 
