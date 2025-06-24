@@ -1,11 +1,11 @@
 import numpy as np
 import pickle
 import streamlit as st
+weather_model = pickle.load(open("weather_model.sav", "rb"))
 
-weather_model=pickle.load(open(r"model/weather_model.sav", "rb"))
 
 
-st.title(' Weather Type Prediction App')
+st.title('Weather Type Prediction App')
 
 # dropdwonlist 
 cloud_cover_map = {"clear": 0, "partly cloudy": 1, "overcast": 2}
